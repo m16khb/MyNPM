@@ -1,0 +1,27 @@
+{
+  "name": "@m16khb/middleware",
+  "version": "1.0.0",
+  "description": "",
+  "author": "m16khb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/typescript/bin/tsc",
+    "patch": "./node_modules/typescript/bin/tsc && npm version patch && npm publish",
+    "minor": "./node_modules/typescript/bin/tsc && npm version minor && npm publish",
+    "major": "./node_modules/typescript/bin/tsc && npm version major && npm publish"
+  },
+  "keywords": [
+    "Middleware"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^9.2.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.11",
+    "typescript": "^4.9.3"
+  }
+}
